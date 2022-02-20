@@ -27,5 +27,6 @@ const Wrapper = styled.div`
 
   & div {
     border-radius: 0.4rem;
+    overflow: auto;
   }
 `;
