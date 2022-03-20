@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import CoinbaseLogo from "../assets/cb-logo.png";
-import { navItems } from "../static/navItems";
+import { navItems } from "../public/static/navItems";
 
 const Sidebar = () => {
   const [activeIcon, setActiveIcon] = useState(navItems[0].title);
   return (
     <Wrapper>
       <LogoContainer>
-        <Logo>
-          <Image src={CoinbaseLogo} alt="Coinbase logo" />
-        </Logo>
+        <Logo>CoinOne</Logo>
       </LogoContainer>
       <NavItemsContainer>
         {navItems.map((item, idx) => (
@@ -42,8 +39,9 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled.div`
-  width: 44%;
-  object-fit: contain;
+  color: #3773f5;
+  font-size: 2rem;
+  font-weight: 700;
   margin-left: 1.5rem;
 `;
 
