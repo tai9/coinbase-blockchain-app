@@ -118,7 +118,6 @@ const CoinName = styled.div`
   margin-right: 0.5rem;
 `;
 const Title = styled.div`
-  color: white;
   margin-bottom: 0.5rem;
 `;
 const Address = styled.div`

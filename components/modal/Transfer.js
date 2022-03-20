@@ -188,9 +188,7 @@ const Icon = styled.div`
 `;
 const Recipient = styled.input`
   border: none;
-  background: none;
   outline: none;
-  color: white;
   font-size: 1.2rem;
   margin-right: 0.5rem;
 `;
