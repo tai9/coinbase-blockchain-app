@@ -26,8 +26,8 @@ const Wrapper = styled.div`
   display: grid;
   height: 100vh;
   max-width: 100vw;
-  background-color: #0a0b0d;
-  color: white;
+  background-color: rgba(0, 62, 193, 0.03);
+  color: rgb(10, 11, 13);
   place-items: center;
 `;
 
@@ -45,7 +45,7 @@ const Button = styled.div`
   font-weight: 500;
   border-radius: 0.4rem;
   background-color: #3773f5;
-  color: #000;
+  color: white;
 
   &:hover {
     cursor: pointer;
