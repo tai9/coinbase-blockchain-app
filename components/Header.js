@@ -17,12 +17,12 @@ const Header = ({ walletAddress, sanityTokens, thirdWebTokens }) => {
       right: "auto",
       bottom: "auto",
       transform: "translate(-50%,-50%)",
-      backgroundColor: "#0a0b0d",
+      backgroundColor: "rgb(255,255,255)",
       padding: 0,
       border: "none",
     },
     overlay: {
-      backgroundColor: "rgba(10, 11, 13, 0.75)",
+      backgroundColor: "rgba(50, 53, 61, 0.33)",
     },
   };
 
@@ -36,9 +36,6 @@ const Header = ({ walletAddress, sanityTokens, thirdWebTokens }) => {
         </WalletAddress>
       </WalletLink>
       <ButtonsContainer>
-        <Button style={{ backgroundColor: "#3773f5", color: "#000" }}>
-          Buy / Sell
-        </Button>
         <Link href={"/?transfer=1"} passHref>
           <Button>Send / Receive</Button>
         </Link>
@@ -63,7 +60,7 @@ export default Header;
 const Wrapper = styled.div`
   width: calc(100% - 3rem);
   padding: 1rem 1.5rem;
-  border-bottom: 1px solid #282b2f;
+  border-bottom: 1px solid rgba(91, 97, 110, 0.2);
   display: flex;
   align-items: center;
 `;
@@ -79,7 +76,7 @@ const ButtonsContainer = styled.div`
 `;
 
 const Button = styled.div`
-  border: 1px solid #282b2f;
+  border: 1px solid rgba(91, 97, 110, 0.2);
   margin: 0 0.5rem;
   padding: 0.8rem;
   font-size: 1.3rem;
@@ -93,10 +90,10 @@ const Button = styled.div`
 
 const WalletLink = styled.div`
   font-size: 1.5rem;
-  border: 1px solid #282b2f;
+  border: 1px solid rgba(91, 97, 110, 0.2);
   border-radius: 50rem;
   margin-right: 1rem;
-  padding: 0 1rem;
+  padding: 0.3rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

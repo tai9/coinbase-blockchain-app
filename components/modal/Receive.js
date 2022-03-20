@@ -61,7 +61,7 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 const Content = styled.div`
-  border: 1px solid #282b2f;
+  border: 1px solid rgba(91, 97, 110, 0.2);
   border-radius: 0.4rem;
   height: 100%;
   display: flex;
@@ -73,7 +73,7 @@ const QRContainer = styled.div`
   flex: 1;
 `;
 const Divider = styled.div`
-  border-bottom: 1px solid #282b2f;
+  border-bottom: 1px solid rgba(91, 97, 110, 0.2);
 `;
 const Row = styled.div`
   display: flex;
@@ -100,6 +100,7 @@ const Icon = styled.div`
 `;
 const CoinSelectList = styled.div`
   display: flex;
+  align-items: center;
   flex: 1.3;
   height: 100%;
 
@@ -112,7 +113,7 @@ const CoinName = styled.div`
   border: none;
   background: none;
   outline: none;
-  color: white;
+  color: rgb(10, 11, 13);
   font-size: 1.2rem;
   margin-right: 0.5rem;
 `;

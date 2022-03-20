@@ -90,7 +90,7 @@ const Content = styled.div`
 `;
 
 const Chart = styled.div`
-  border: 1px solid #282b2f;
+  border: 1px solid rgba(91, 97, 110, 0.2);
   padding: 1rem 2rem;
 `;
 const Balance = styled.div``;
@@ -106,7 +106,7 @@ const BalanceValue = styled.div`
 
 const PortfolioTable = styled.div`
   margin-top: 1rem;
-  border: 1px solid #282b2f;
+  border: 1px solid rgba(91, 97, 110, 0.2);
 `;
 
 const Table = styled.table`
@@ -124,7 +124,7 @@ const TableRow = styled.tr`
 `;
 
 const Divider = styled.div`
-  border-bottom: 1px solid #282b2f;
+  border-bottom: 1px solid rgba(91, 97, 110, 0.2);
 `;
 
 const TableItem = styled.div`

@@ -39,7 +39,7 @@ const WalletConnect = styled.div`
 `;
 
 const Button = styled.div`
-  border: 1px solid #282b2f;
+  border: 1px solid rgba(91, 97, 110, 0.2);
   padding: 0.8rem;
   font-size: 1.3rem;
   font-weight: 500;

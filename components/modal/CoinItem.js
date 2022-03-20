@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import imageUrlBuilder from "@sanity/image-url";
 import { client } from "../../lib/sanity";
-import { FaCheck } from "react-icons/fa";
+import { BiCheck } from "react-icons/bi";
 
 const CoinItem = ({
   setAction,
@@ -10,7 +10,6 @@ const CoinItem = ({
   setSelectedToken,
   sender,
   thirdWebTokens,
-  sanityTokens,
   token,
 }) => {
   const [balance, setBalance] = useState("Fetching...");
@@ -41,7 +40,8 @@ const CoinItem = ({
   return (
     <Wrapper
       style={{
-        backgroundColor: token.name === selectedToken.name && "#141519",
+        backgroundColor:
+          token.name === selectedToken.name && "rgb(238,240,243)",
       }}
       onClick={() => {
         setSelectedToken(token);
@@ -61,7 +61,9 @@ const CoinItem = ({
         {balance} {token.symbol}
       </Balance>
       <IsSelected>
-        {selectedToken.contractAddress === token.contractAddress && <FaCheck />}
+        {selectedToken.contractAddress === token.contractAddress && (
+          <BiCheck fontSize={32} />
+        )}
       </IsSelected>
     </Wrapper>
   );
@@ -73,10 +75,11 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 1rem 0.5rem;
+  border-radius: 8px;
 
   &:hover {
     cursor: pointer;
-    background-color: #141519;
+    background-color: rgb(245, 248, 254);
   }
 `;
 const Main = styled.div`
@@ -103,6 +106,7 @@ const NameDetail = styled.div``;
 const Name = styled.div`
   font-size: 1.1rem;
   margin-bottom: 0.2rem;
+  font-weight: 500;
 `;
 const Symbol = styled.div`
   font-size: 0.8rem;

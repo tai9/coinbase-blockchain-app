@@ -33,7 +33,7 @@ const OfferCard = styled.div`
   width: 21rem;
   height: 11rem;
   margin-bottom: 1rem;
-  border: 1px solid #282b2f;
+  border: 1px solid rgba(91, 97, 110, 0.2);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;

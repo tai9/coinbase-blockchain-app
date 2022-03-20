@@ -62,7 +62,7 @@ const Transfer = ({
             placeholder="0"
             onChange={(e) => setAmount(e.target.value)}
           />
-          <span>{selectedToken.symbol}</span>
+          <span>{selectedToken?.symbol}</span>
         </FlexInputContainer>
         <Warning style={{ color: amount && "#0a0b0d" }}>
           Amount is a required field
@@ -71,14 +71,16 @@ const Transfer = ({
       <TransferForm>
         <Row>
           <FieldName>To</FieldName>
-          <Icon>
-            <FaWallet />
-          </Icon>
-          <Recipient
-            value={recipient}
-            onChange={(e) => setRecipient(e.target.value)}
-            placeholder="Address"
-          />
+          <CoinSelectList>
+            <Icon>
+              <FaWallet />
+            </Icon>
+            <Recipient
+              value={recipient}
+              onChange={(e) => setRecipient(e.target.value)}
+              placeholder="Address"
+            />
+          </CoinSelectList>
         </Row>
         <Divider />
         <Row>
@@ -152,11 +154,11 @@ const Warning = styled.div`
   color: #8a919e;
 `;
 const TransferForm = styled.div`
-  border: 1px solid #282b2f;
+  border: 1px solid rgba(91, 97, 110, 0.2);
   border-radius: 0.4rem;
 `;
 const Divider = styled.div`
-  border: 1px solid #282b2f;
+  border-bottom: 1px solid rgba(91, 97, 110, 0.2);
 `;
 const Row = styled.div`
   display: flex;
@@ -207,7 +209,7 @@ const CoinName = styled.div`
   border: none;
   background: none;
   outline: none;
-  color: white;
+  color: rgb(10, 11, 13);
   font-size: 1.2rem;
   margin-right: 0.5rem;
 `;
@@ -219,11 +221,13 @@ const Continue = styled.button`
   padding: 1rem;
   border-radius: 0.4rem;
   font-size: 1.2rem;
+  border: none;
 
   &:hover {
     cursor: pointer;
-    background-color: #4a80f6;
   }
 `;
-const Balance = styled.div``;
+const Balance = styled.div`
+  color: rgb(10, 11, 13);
+`;
 const BalanceTitle = styled.div``;

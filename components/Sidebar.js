@@ -12,7 +12,14 @@ const Sidebar = () => {
       </LogoContainer>
       <NavItemsContainer>
         {navItems.map((item, idx) => (
-          <NavItem key={idx} onClick={() => setActiveIcon(item.title)}>
+          <NavItem
+            key={idx}
+            onClick={() => setActiveIcon(item.title)}
+            style={{
+              backgroundColor:
+                item.title === activeIcon && "rgb(245, 248, 254)",
+            }}
+          >
             <NavIcon style={{ color: item.title === activeIcon && "#3773f5" }}>
               {item.icon}
             </NavIcon>
@@ -30,7 +37,7 @@ export default Sidebar;
 
 const Wrapper = styled.div`
   height: calc(100vh);
-  border-right: 1px solid #282b2f;
+  border-right: 1px solid rgba(91, 97, 110, 0.2);
   width: calc(22rem - 16px - 16px);
   padding: 0 1rem;
 `;
@@ -63,7 +70,7 @@ const NavItem = styled.div`
   height: 4rem;
 
   &:hover {
-    background-color: #141519;
+    background-color: rgb(245, 248, 254);
   }
 `;
 

@@ -13,7 +13,7 @@ const TransferModal = ({ walletAddress, sanityTokens, thirdWebTokens }) => {
     color: "#3773f5",
   };
   const unselectedStyle = {
-    border: "1px solid #282b2f",
+    border: "1px solid rgba(91, 97, 110, 0.2)",
   };
 
   const selectedModal = (option) => {
@@ -98,8 +98,8 @@ export default TransferModal;
 const Wrapper = styled.div`
   height: 35rem;
   width: 27rem;
-  color: white;
-  border: 1px solid #282b2f;
+  color: rgb(10, 11, 13);
+  border: 1px solid rgba(91, 97, 110, 0.2);
   display: flex;
   flex-direction: column;
 `;
@@ -119,11 +119,10 @@ const Option = styled.div`
 
   &:hover {
     cursor: pointer;
-    background-color: #111214;
   }
 `;
 const ModalMain = styled.div`
-  padding: 1rem;
+  padding: 1.5rem;
   flex: 1;
 `;
 const Transfering = styled.div`
