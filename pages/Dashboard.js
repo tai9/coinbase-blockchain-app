@@ -27,7 +27,6 @@ const Dashboard = ({ address }) => {
           "https://kdq958m0.api.sanity.io/v2021-10-21/data/query/production?query=*%5B%20_type%3D%3D%22coins%22%20%5D%7B%0A%20%20name%2C%0A%20%20contractAddress%2C%0A%20%20usdPrice%2C%0A%20%20symbol%2C%0A%20%20logo%0A%7D"
         );
         const tempSanityTokens = await coins.json();
-        console.log(tempSanityTokens.result);
         setSanityTokens(tempSanityTokens.result);
 
         setThirdWebTokens(

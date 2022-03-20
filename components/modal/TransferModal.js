@@ -8,7 +8,6 @@ import Receive from "./Receive";
 const TransferModal = ({ walletAddress, sanityTokens, thirdWebTokens }) => {
   const [action, setAction] = useState("send");
   const [selectedToken, setSelectedToken] = useState(sanityTokens[0]);
-  console.log(selectedToken);
   const selectedStyle = {
     color: "#3773f5",
   };

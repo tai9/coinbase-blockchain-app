@@ -46,7 +46,6 @@ const Transfer = ({
         recipient,
         amount.toString().concat("000000000000000000")
       );
-      console.log(tx, "🔫");
       setAction("transfered");
     } else {
       console.log("missing data");
